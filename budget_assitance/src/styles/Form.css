@@ -1,0 +1,210 @@
+/* 🌟 Global Theme Colors */
+:root {
+    --primary-bg: #0d0c09; /* Vanilla Latte */
+    --primary-text: #333; /* Dark Gray */
+    --secondary-bg: #174E4F; /* Teal Forest */
+    --secondary-text: #FFFFFF; /* White */
+    --highlight-color: #1F6363; /* Slightly Darker Teal */
+}
+
+/* ✅ Light Mode (Default) */
+body {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+    margin: 0;
+    padding: 40px; /* ✅ Keeps padding but prevents navbar issue */
+    box-sizing: border-box; /* ✅ Ensures padding doesn’t affect width */
+    padding-top: 10px;
+}
+
+/* ✅ Dark Mode */
+.dark-mode {
+    --primary-bg: #1a1a1a;
+    --primary-text: #ffffff;
+    --secondary-bg: #333333;
+    --secondary-text: #f3e5c3;
+}
+
+/* 🏠 Navbar */
+.navbar {
+    width: 100%;
+    background-color: #174E4F;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0; /* ✅ Forces navbar to stick to the left */
+    z-index: 1000;
+}
+
+
+
+.navbar a {
+    color: var(--secondary-text);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 20px;
+}
+
+.navbar a:hover {
+    background-color: var(--highlight-color);
+    border-radius: 5px;
+}
+
+/* 📄 Form Styling */
+form {
+    background: var(--secondary-bg);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid var(--highlight-color);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--primary-text);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--secondary-bg);
+    outline: none;
+    box-shadow: 0 0 10px rgba(23, 78, 79, 0.3);
+}
+
+/* 📌 Buttons */
+button {
+    background: var(--secondary-bg);
+    color: var(--secondary-text);
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: var(--highlight-color);
+    transform: scale(1.05);
+}
+
+/* 🔘 Toggle Switch */
+.toggleSwitch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 35px;
+    height: 20px;
+    background-color: rgb(82, 82, 82);
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+
+.toggleSwitch::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    left: 5px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition-duration: .2s;
+    box-shadow: 5px 2px 7px rgba(8, 8, 8, 0.26);
+    border: 4px solid white;
+}
+
+#checkboxInput:checked + .toggleSwitch::after {
+    transform: translateX(100%);
+    transition-duration: .2s;
+    background-color: white;
+}
+
+#checkboxInput:checked + .toggleSwitch {
+    background-color: rgb(148, 118, 255);
+    transition-duration: .2s;
+}
+
+/* 🛠 Responsive */
+@media (max-width: 1024px) {
+    form {
+        width: 90%;
+    }
+}
+/* Form Container */
+.form-container {
+    width: 40%;
+    background: #141818;
+    color: white;
+    padding: 60px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h2 {
+    font-size: 24px;
+    color: #F3E5C3;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-size: 16px;
+    text-align: left;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Inputs */
+input, select {
+    width: 90%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background: white;
+    font-size: 16px;
+}
+
+/* Buttons */
+.save-btn {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.save-btn:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* Error Messages */
+.error {
+    background: #ff4b2b;
+    color: white;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}

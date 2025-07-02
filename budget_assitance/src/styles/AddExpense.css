@@ -1,0 +1,107 @@
+.expense-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 100px;
+    background-color: #121212;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* ✅ OCR Receipt Upload */
+.receipt-upload {
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.scan-label {
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.receipt-preview {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.currency-input {
+    display: flex;
+    align-items: center;
+}
+
+.currency-input select {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.radio-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.upload input {
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.save-draft {
+    background-color: #00e0e0;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #007bff !important;
+    color: white !important;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.save-btn:hover {
+    background-color: #0056b3 !important;
+}

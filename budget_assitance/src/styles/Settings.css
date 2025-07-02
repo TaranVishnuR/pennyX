@@ -1,0 +1,164 @@
+.settings-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 70px;
+    background: #121212;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.settings-title {
+    text-align: center;
+    font-size: 28px;
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Grid Layout */
+.settings-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* 🔹 Section Styling */
+.settings-section {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.settings-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #00c3ff;
+}
+
+.settings-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.settings-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+/* 🔹 Toggle Switch */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #00e676;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* 🔹 Buttons */
+.primary-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.primary-btn:hover {
+    background: #0056b3;
+}
+
+.green-btn {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.green-btn:hover {
+    background: #218838;
+}
+
+/* 🔹 Delete Account Button (Same as Logout Button) */
+.delete-account-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.delete-account-btn {
+    background: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.delete-account-btn:hover {
+    background: darkred;
+}

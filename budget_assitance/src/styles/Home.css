@@ -1,0 +1,129 @@
+/* 🌙 Dark Theme */
+.home-container {
+    display: flex;
+    background: #121212;
+    color: white;
+    min-height: 100vh;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+
+/* ✅ Centered Dashboard Heading */
+
+
+
+/* 📌 Main Content */
+.main-content {
+    margin: 0 auto; /* ✅ This ensures equal space on both sides */
+    width: 80%; /* ✅ Adjusted for a more centered layout */
+    padding: 20px;
+    text-align: center;
+}
+
+/* 📊 Recent Income & Expenses */
+.recent-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* ✅ Boxed Layout for Income & Expenses */
+.recent-expenses, .recent-income {
+    background: #1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+    min-height: 220px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 📊 Budget & Spending Analysis */
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* ✅ Adjusted Quick Access */
+.quick-access {
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+}
+
+/* 📊 Budget & Spending Analysis */
+.budget-goal, .spending-analysis {
+    background: #1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+    min-height: 220px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Make Home Page Buttons Blue */
+/* ✅ Make Home Page Buttons Blue */
+.quick-btn {
+    background-color: #007bff !important; /* ✅ Force Blue */
+    color: white !important; /* ✅ Ensure White Text */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.quick-btn:hover {
+    background-color: #0056b3 !important; /* ✅ Darker Blue on Hover */
+}
+
+/* ✅ Make Edit Budget Button Blue */
+.edit-btn {
+    background-color: #007bff !important; /* 🔹 Blue */
+    color: white !important;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3 !important; /* 🔹 Darker Blue on Hover */
+}
+
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+    .recent-section {
+        flex-direction: column;
+    }
+    
+    .recent-expenses, .recent-income {
+        width: 100%;
+    }
+    
+    .main-content {
+        width: 95%;
+    }
+}

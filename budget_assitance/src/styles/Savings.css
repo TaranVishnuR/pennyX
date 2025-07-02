@@ -1,0 +1,212 @@
+/* 🌙 Dark Theme */
+.savings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+    min-height: 100vh;
+    background: #121212;
+    color: white;
+}
+
+/* ✅ Total Savings Card */
+.total-savings {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ✅ Better Hover Effect */
+.total-savings:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.6);
+}
+
+/* ✅ Add Savings Box */
+.add-savings {
+    background: #1b1b1b;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 45%;
+    margin-bottom: 25px;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Add Savings Hover */
+.add-savings:hover {
+    transform: scale(1.03);
+}
+
+/* ✅ Styled Input Fields */
+.add-savings input {
+    width: 90%;
+    padding: 14px;
+    margin: 10px 0;
+    background: #2b2b2b;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* ✅ Focus Effect on Input */
+.add-savings input:focus {
+    border-color: #00c6ff;
+    outline: none;
+    box-shadow: 0 0 12px rgba(0, 198, 255, 0.6);
+}
+
+/* ✅ Stylish Add Savings Button */
+.add-savings button {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 92%;
+}
+
+/* ✅ Button Hover Effect */
+.add-savings button:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    transform: scale(1.07);
+}
+
+/* 📊 Monthly Savings Bar Chart */
+.savings-chart {
+    background: #1b1b1b;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 25px;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Smooth Scaling */
+.savings-chart:hover {
+    transform: scale(1.03);
+}
+
+/* 📊 Chart Title */
+.savings-chart h2 {
+    color: #00c6ff;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* ✅ Improved Bar Chart UI */
+.recharts-bar-rectangle {
+    border-radius: 5px;
+}
+
+/* ✅ Improved Tooltip Styling */
+.recharts-tooltip-wrapper {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* 💬 AI Chatbot */
+.chatbot-container {
+    background: #1b1b1b;
+    padding: 20px;
+    border-radius: 12px;
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Chatbot Hover Effect */
+.chatbot-container:hover {
+    transform: scale(1.03);
+}
+
+/* ✨ Chatbot Title */
+.chatbot-container h2 {
+    color: #00c6ff;
+    font-size: 1.4rem;
+}
+
+/* ✅ Chatbot Input Styling */
+.chatbot-container input {
+    width: 80%;
+    padding: 12px;
+    margin-top: 10px;
+    background: white;
+    border: 2px solid #444;
+    color: black;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* ✅ Focus Effect on Chatbot Input */
+.chatbot-container input:focus {
+    border-color: #ff4b2b;
+    box-shadow: 0 0 10px rgba(255, 75, 43, 0.5);
+}
+
+/* 🔘 Chatbot Button */
+.chatbot-container button {
+    background: #ff4b2b;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Chatbot Button Hover */
+.chatbot-container button:hover {
+    background: #ff1e00;
+    transform: scale(1.05);
+}
+
+/* 📱 Responsive Improvements */
+@media (max-width: 1024px) {
+    .total-savings,
+    .add-savings,
+    .savings-chart,
+    .chatbot-container {
+        width: 90%;
+    }
+
+    /* ✅ Responsive Text Size */
+    .total-savings {
+        font-size: 1.8rem;
+        padding: 20px;
+    }
+
+    .add-savings button {
+        font-size: 14px;
+    }
+
+    .savings-chart h2 {
+        font-size: 1.4rem;
+    }
+}

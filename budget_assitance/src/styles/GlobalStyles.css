@@ -1,0 +1,164 @@
+/* ✅ Root Variables */
+:root {
+    --primary-bg: #F3E5C3; /* Vanilla Latte */
+    --primary-text: #333; /* Dark Text */
+    --secondary-bg: #174E4F; /* Teal Forest */
+    --secondary-text: #FFFFFF; /* White */
+    --highlight-color: #1F6363; /* Slightly Darker Teal */
+    --border-radius: 8px;
+    --shadow: 0 4px 8px rgba(146, 9, 9, 0.1);
+    --transition-speed: 0.3s;
+}
+
+.logout-btn {
+    background-color: #dc3545 !important;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.logout-btn:hover {
+    background-color: #b02a37 !important;
+}
+
+
+/* ✅ Body Styles */
+body {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    font-family: 'Poppins', sans-serif;
+    transition: all var(--transition-speed) ease-in-out;
+}
+
+/* ✅ Navbar */
+.navbar {
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    box-shadow: var(--shadow);
+}
+
+.navbar a {
+    color: var(--secondary-text);
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: var(--border-radius);
+    transition: var(--transition-speed);
+}
+
+.navbar a:hover {
+    background-color: var(--highlight-color);
+}
+
+/* ✅ Buttons */
+button {
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition-speed);
+    box-shadow: var(--shadow);
+}
+
+button:hover {
+    background-color: var(--highlight-color);
+    transform: translateY(-2px);
+}
+
+/* ✅ Card Styling */
+.card {
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition-speed);
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* ✅ Input Fields */
+input, select {
+    width: 100%;
+    background-color: white;
+    border: 2px solid var(--secondary-bg);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    color: var(--primary-text);
+    transition: var(--transition-speed);
+}
+
+input:focus, select:focus {
+    border-color: var(--highlight-color);
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(31, 99, 99, 0.5);
+}
+
+/* ✅ Toggle Switch */
+.toggleSwitch {
+    width: 42px;
+    height: 22px;
+    background: var(--secondary-bg);
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: var(--transition-speed);
+}
+
+.toggleSwitch::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: var(--transition-speed);
+}
+
+input:checked + .toggleSwitch {
+    background: var(--highlight-color);
+}
+
+input:checked + .toggleSwitch::after {
+    transform: translateX(20px);
+}
+
+/* ✅ Dark Mode */
+.dark-mode {
+    --primary-bg: #1a1a1a;
+    --primary-text: #ffffff;
+    --secondary-bg: #333333;
+    --secondary-text: #f3e5c3;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
