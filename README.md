@@ -1,19 +1,33 @@
  PennyX – Smart Budget Assistant
 
-PennyX is a personal finance web app that helps you track your expenses, visualize spending, and manage your budget — all in one clean dashboard.
+PennyX is your intelligent personal finance web app that helps you track expenses, scan bills, speak transactions, and get budgeting help from a built-in chatbot — all in one place.
 
- Features
+---
 
--  Google Login (Firebase Auth)
--  Real-time Expense Tracking (Firestore)
--  Transaction History with Categories
--  Smart Budget Planning (Coming Soon)
--  User-specific data sync (private & secure)
+Features
+
+-  **Google Sign-In** (via Firebase Auth)
+-  **Real-time Expense Tracking** (Firestore)
+-  **Voice-based Input** for Income & Expenses
+-  **OCR Integration** to Scan Bills/Receipts
+-  **Built-in AI Chatbot** for Finance Help
+-  **Transaction History & Filters**
+-  **Real-time Updates & Sync**
+-  **Secure Storage**
 
  Tech Stack
 
-- **Frontend**: React + CSS Modules
-- **Auth & DB**: Firebase (Auth + Firestore)
-- **State Management**: React Hooks
-- **Deploy**: Vite + GitHub Pages (or Vercel)
+Frontend:
+React – SPA framework for building UI
+Vite – Fast development and bundling
+CSS  –  styling
+React Hooks – State and lifecycle management
+
+Authentication & Database:
+Firebase Auth – Google sign-in & auth state management
+Cloud Firestore – Real-time NoSQL database for storing users & transactions
+
+AI & Voice Tech:
+Web Speech API – Voice input for income/expense logging
+Tesseract.js – OCR (Optical Character Recognition) for scanning bills
 
