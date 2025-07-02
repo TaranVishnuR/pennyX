@@ -18,7 +18,7 @@ Features
  Tech Stack
 
 Frontend:
-React – SPA framework for building UI
+React – For building UI
 Vite – Fast development and bundling
 CSS  –  styling
 React Hooks – State and lifecycle management
